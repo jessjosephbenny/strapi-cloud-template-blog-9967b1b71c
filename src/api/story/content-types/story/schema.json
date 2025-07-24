@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "stories",
+  "info": {
+    "singularName": "story",
+    "pluralName": "stories",
+    "displayName": "Story"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "blocks"
+    },
+    "media_item": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::media-item.media-item"
+    },
+    "saint": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::saint.saint"
+    }
+  }
+}

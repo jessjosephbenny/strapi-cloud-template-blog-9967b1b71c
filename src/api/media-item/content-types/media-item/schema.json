@@ -1,0 +1,53 @@
+{
+  "kind": "collectionType",
+  "collectionName": "media_items",
+  "info": {
+    "singularName": "media-item",
+    "pluralName": "media-items",
+    "displayName": "MediaItem"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "audio",
+        "video"
+      ]
+    },
+    "title": {
+      "type": "string"
+    },
+    "language": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::language.language"
+    },
+    "file": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "transcript": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::transcript.transcript"
+    },
+    "duration": {
+      "type": "integer"
+    },
+    "saint": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::saint.saint"
+    }
+  }
+}

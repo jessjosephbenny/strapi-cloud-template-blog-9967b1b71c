@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "saints",
+  "info": {
+    "singularName": "saint",
+    "pluralName": "saints",
+    "displayName": "Saint"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "date": {
+      "type": "date"
+    },
+    "slug": {
+      "type": "uid"
+    },
+    "bio": {
+      "type": "text"
+    }
+  }
+}
