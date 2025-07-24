@@ -14,14 +14,14 @@
     "name": {
       "type": "string"
     },
-    "date": {
-      "type": "date"
-    },
     "slug": {
       "type": "uid"
     },
     "bio": {
       "type": "text"
+    },
+    "dayOfYear": {
+      "type": "string"
     }
   }
 }
