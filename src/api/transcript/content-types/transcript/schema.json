@@ -9,15 +9,19 @@
   "options": {
     "draftAndPublish": true
   },
-  "pluginOptions": {},
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
   "attributes": {
-    "language": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::language.language"
-    },
     "content": {
-      "type": "blocks"
+      "type": "blocks",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "media_item": {
       "type": "relation",
